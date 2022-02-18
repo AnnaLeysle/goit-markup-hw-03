@@ -56,13 +56,17 @@ margin-bottom: 0;
   padding-bottom: 94px;
 }
 
+.header {
+  border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #ECECEC;
+}
+
 .header-container {
 display: flex;
 align-items: center;
 padding-top: 32px;
 padding-bottom: 32px;
-border-bottom-width: 1px;
-border-bottom-color: #ECECEC;
 }
 
 .nav-list {
@@ -227,6 +231,9 @@ width: 270px;
 }
 
 /* Наша команда */
+.team-section {
+  background-color: var(--button-bgc-color);
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -332,7 +339,17 @@ margin-bottom: 50px;
 }
 /* Для страницы portfolio.html */
 
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-btn {
+  padding: 6px 22px;
   cursor: pointer;
 
   font-family: inherit;
@@ -342,6 +359,8 @@ margin-bottom: 50px;
   text-align: center;
   letter-spacing: 0.03em;
 
+  border-width: 0;
+  border-radius: 4px;
   color: var(--main-title-color);
   background-color: var(--button-bgc-color);
 }
@@ -352,7 +371,35 @@ margin-bottom: 50px;
   background-color: var(--accent-color);
 }
 
+.projects-list {
+  display: flex;
+  margin-top: 50px;
+  /* width: 1170px; */
+  flex-wrap: wrap;
+}
+
+.projects-list .item {
+  width: 370px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #EEEEEE;
+}
+
+.projects-list .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects-list .item:not(:nth-last-child(-n+3)) {
+margin-bottom: 50px;
+}
+
+.projects-description {
+  margin: 20px 24px;
+}
 .projects-name {
+  display: block;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
