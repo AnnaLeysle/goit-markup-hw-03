@@ -57,10 +57,12 @@ margin-bottom: 0;
 }
 
 .header-container {
-  padding-top: 32px;
-  padding-bottom: 32px;
 display: flex;
 align-items: center;
+padding-top: 32px;
+padding-bottom: 32px;
+border-bottom-width: 1px;
+border-bottom-color: #ECECEC;
 }
 
 .nav-list {
@@ -134,7 +136,16 @@ margin-left: auto;
 }
 
 /* Стили героя */
+
+.hero {
+  background-color: #2F303A;
+}
 .hero-title {
+  display: flex;
+  width: 696px;
+  margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -143,12 +154,20 @@ margin-left: auto;
   text-transform: uppercase;
 
   color: var(--white-elements);
-  /* цвет фна указан для видимсти */
-  background-color: #000;
 }
 
 .hero-btn {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-bottom: 200px;
+  margin-right: auto;
+
   cursor: pointer;
+
+  border-radius: 4px;
+  padding-left: auto;
+  padding-right: auto;
   
   font-family: inherit
   font-weight: 700;
@@ -158,6 +177,7 @@ margin-left: auto;
   letter-spacing: 0.06em;
   color: var(--white-elements);
   background-color: var(--accent-color);
+  border-color: transparent;
 }
 
 .hero-btn:hover,
@@ -167,7 +187,23 @@ margin-left: auto;
 
 /* Для страницы index.html */
 
+/* Преимущества */
+.advantages-list {
+  display: flex;
+  align-items: center;
+}
+
+.advantages-list > .list-item {
+width: 270px;
+}
+
+.advantages-list > .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -177,6 +213,20 @@ margin-left: auto;
   color: var(--main-title-color);
 }
 
+/* Услуги */
+.service-list {
+  display: flex;
+}
+
+.service-list .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.img {
+  display: block;
+}
+
+/* Наша команда */
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -187,7 +237,22 @@ margin-left: auto;
   color: var(--main-title-color);
 }
 
+.team-list {
+display: flex;
+
+}
+
+.team-section .section-title {
+margin-bottom: 50px;
+}
+
+.team-list > .list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .team-name {
+  margin-top: 30px;
+  text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -197,6 +262,9 @@ margin-left: auto;
 }
 
 .team-position {
+  margin-top: 10px;
+  text-align: center;
+
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -204,6 +272,25 @@ margin-left: auto;
 
 /* Футер */
 
+.footer {
+  background-color: #2F303A;
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
 .adress {
   font-style: normal;
   font-size: 14px;
@@ -211,8 +298,6 @@ margin-left: auto;
   letter-spacing: 0.03em;
 
   color: var(--white-elements);
-  /* цвет фна указан для видимсти */
-  background-color: #000;
 }
 
 .footer-mail,
@@ -223,8 +308,6 @@ margin-left: auto;
   letter-spacing: 0.03em;
 
   color: var(--footer-contacts-color);
-  /* цвет фна указан для видимсти */
-  background-color: #000;
 }
 
 .adress:hover,
@@ -238,10 +321,15 @@ margin-left: auto;
 
 .logo-white {
   color: var(--white-elements);
-  /* цвет фна указан для видимсти */
-  background-color: #000;
 }
 
+.footer-item {
+  display: block;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 /* Для страницы portfolio.html */
 
 .portfolio-btn {
