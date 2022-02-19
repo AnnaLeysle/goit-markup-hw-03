@@ -162,6 +162,7 @@ margin-left: auto;
 
 .hero-btn {
   display: block;
+  padding: 10px 32px;
   margin-top: 30px;
   margin-left: auto;
   margin-bottom: 200px;
@@ -228,6 +229,7 @@ width: 270px;
 
 .img {
   display: block;
+
 }
 
 /* Наша команда */
@@ -380,9 +382,9 @@ margin-bottom: 50px;
 
 .projects-list .item {
   width: 370px;
-  border-width: 1px;
+  /* border-width: 1px;
   border-style: solid;
-  border-color: #EEEEEE;
+  border-color: #EEEEEE; */
 }
 
 .projects-list .item:not(:nth-child(3n)) {
@@ -394,7 +396,18 @@ margin-bottom: 50px;
 }
 
 .projects-description {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #EEEEEE;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #EEEEEE;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #EEEEEE;
 }
 .projects-name {
   display: block;
