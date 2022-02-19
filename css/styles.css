@@ -108,6 +108,7 @@ margin-right: 93px;
 .active,
 .nav-link:hover,
 .nav-link:focus {
+  font-weight: 500;
   color: var(--accent-color);
 }
 
