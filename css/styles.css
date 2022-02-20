@@ -89,7 +89,7 @@ padding-bottom: 32px;
 }
 
 .nav-item:not(:last-child) {
-margin-right: 93px;
+margin-right: 50px;
 }
 
 .nav-link {
@@ -119,6 +119,7 @@ margin-left: auto;
 .mail {
   margin-right: 50px;
 }
+
 .mail,
 .tel {
   font-weight: 500;
@@ -142,13 +143,16 @@ margin-left: auto;
 
 /* Стили героя */
 
-.hero {
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #2F303A;
 }
+
 .hero-title {
   display: flex;
   width: 696px;
-  margin-top: 200px;
+  /* margin-top: 200px; */
     margin-right: auto;
     margin-left: auto;
   font-weight: 900;
@@ -166,7 +170,7 @@ margin-left: auto;
   padding: 10px 32px;
   margin-top: 30px;
   margin-left: auto;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
   margin-right: auto;
 
   cursor: pointer;
@@ -194,6 +198,11 @@ margin-left: auto;
 /* Для страницы index.html */
 
 /* Преимущества */
+
+.advantages-section {
+  /* padding-bottom: -48px; */
+}
+
 .advantages-list {
   display: flex;
   align-items: center;
@@ -220,6 +229,11 @@ width: 270px;
 }
 
 /* Услуги */
+
+.service-section {
+  padding-bottom: 96px;
+}
+
 .service-list {
   display: flex;
 }
@@ -237,6 +251,7 @@ width: 270px;
 .team-section {
   background-color: var(--button-bgc-color);
 }
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -259,8 +274,13 @@ margin-bottom: 50px;
 .team-list > .list-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-name {
-  margin-top: 30px;
   text-align: center;
 
   font-weight: 500;
@@ -283,13 +303,12 @@ margin-bottom: 50px;
 /* Футер */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: #2F303A;
 }
 
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .footer-logo {
   display: block;
   margin-bottom: 20px;
