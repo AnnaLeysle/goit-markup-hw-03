@@ -62,17 +62,24 @@ margin-bottom: 0;
   height: auto;
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+/* Шапка */
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   border-bottom-width: 1px;
-border-bottom-style: solid;
-border-bottom-color: #ECECEC;
+  border-bottom-style: solid;
+  border-bottom-color: #ECECEC;
 }
 
 .header-container {
 display: flex;
 align-items: center;
-padding-top: 32px;
-padding-bottom: 32px;
 }
 
 .nav-list {
@@ -81,13 +88,14 @@ padding-bottom: 32px;
 }
 
 .logo {
+  margin-right: 93px;
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-right: 93px;
 }
 
 .logo-black {
@@ -95,7 +103,7 @@ padding-bottom: 32px;
 }
 
 .nav-item:not(:last-child) {
-margin-right: 50px;
+  margin-right: 50px;
 }
 
 .nav-link {
@@ -119,7 +127,7 @@ margin-right: 50px;
 }
 
 .contacts-container {
-margin-left: auto;
+  margin-left: auto;
 }
 
 .mail {
@@ -142,11 +150,6 @@ margin-left: auto;
   color: var(--accent-color);
 }
 
-.visually-hidden {
-  position: fixed;
-  transform: scale(0);
-}
-
 /* Стили героя */
 
 .hero-section {
@@ -158,9 +161,9 @@ margin-left: auto;
 .hero-title {
   display: flex;
   width: 696px;
-  /* margin-top: 200px; */
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -176,7 +179,6 @@ margin-left: auto;
   padding: 10px 32px;
   margin-top: 30px;
   margin-left: auto;
-  /* margin-bottom: 200px; */
   margin-right: auto;
 
   cursor: pointer;
@@ -245,6 +247,7 @@ width: 270px;
 }
 
 /* Наша команда */
+
 .team-section {
   background-color: var(--button-bgc-color);
 }
@@ -393,15 +396,11 @@ margin-bottom: 50px;
 .projects-list {
   display: flex;
   margin-top: 50px;
-  /* width: 1170px; */
   flex-wrap: wrap;
 }
 
 .projects-list .item {
   width: 370px;
-  /* border-width: 1px;
-  border-style: solid;
-  border-color: #EEEEEE; */
 }
 
 .projects-list .item:not(:nth-child(3n)) {
