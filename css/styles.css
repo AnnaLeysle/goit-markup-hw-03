@@ -240,6 +240,7 @@ width: 270px;
 
 .service-list {
   display: flex;
+  margin-top: 50px;
 }
 
 .service-list .list-item:not(:last-child) {
